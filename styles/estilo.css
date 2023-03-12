@@ -1,0 +1,276 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+.wrapper {
+          background-image: url("../Imagenes/FondoHomebien.png");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          min-height: 100vh;
+}
+
+* {
+          padding: 0;
+          margin: 0;
+          text-decoration: none;
+          list-style: none;
+          box-sizing: border-box;
+}
+main {
+          background: rgb(255, 188, 45);
+          background: linear-gradient(
+                    180deg,
+                    rgba(255, 188, 45, 1) 85%,
+                    rgba(255, 219, 141, 1) 100%
+          );
+}
+h1 {
+          color: white;
+}
+
+.tituloheader {
+          height: 30vh;
+          margin-left: 3rem;
+          font-weight: bold;
+          text-align: center;
+          width: 30%;
+}
+
+nav {
+          padding: 2rem;
+          height: 25rem;
+          width: 60%;
+}
+.enlace {
+          position: absolute;
+          padding: 20px 50px;
+}
+.logo {
+          height: 6.5rem;
+}
+nav ul {
+          float: right;
+          margin-right: 20px;
+}
+nav ul li {
+          display: inline-block;
+          line-height: 80px;
+          margin: 0 5px;
+}
+nav ul li a {
+          color: rgb(255, 255, 255);
+          font-size: 18px;
+          padding: 7px 13px;
+          border-radius: 3px;
+          text-transform: uppercase;
+          text-decoration: none;
+}
+li a:hover {
+          background: #c28c19;
+          transition: 0.5s;
+          color: white;
+          border-radius: 0.5rem;
+}
+.botonshop {
+          color: rgb(255, 255, 255);
+          font-size: 18px;
+          padding: 7px 13px;
+          border-radius: 3px;
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: #c3890a;
+}
+a:hover {
+          background: #816018;
+          transition: 0.5s;
+          color: white;
+          border-radius: 0.5rem;
+}
+
+.checkbtn {
+          font-size: 30px;
+          color: rgb(172, 138, 78);
+          float: right;
+          line-height: 80px;
+          margin-right: 40px;
+          cursor: pointer;
+          display: none;
+}
+#check {
+          display: none;
+}
+section {
+          display: flex;
+          justify-items: center;
+          font-size: 1.2rem;
+          color: white;
+          font-weight: bold;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 50vh;
+          width: 100%;
+          text-align: center;
+          background-color: #ffbb2e;
+}
+
+@media (max-width: 952px) {
+          .enlace {
+                    padding-left: 20px;
+          }
+          nav ul li a {
+                    font-size: 16px;
+          }
+}
+
+@media (max-width: 858px) {
+          .checkbtn {
+                    display: block;
+          }
+          ul {
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: rgba(195, 136, 34, 0.616);
+                    top: 80px;
+                    left: -100%;
+                    text-align: center;
+                    transition: all 0.5s;
+          }
+          nav ul li {
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+          }
+          nav ul li a {
+                    font-size: 20px;
+          }
+          li a:hover,
+          li a.active {
+                    background: none;
+                    color: rgb(0, 0, 0);
+          }
+          #check:checked ~ ul {
+                    left: 0;
+          }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Lato", sans-serif;
+}
+
+body {
+          height: 100vh;
+}
+
+.container__cards {
+          max-width: 1200px;
+          margin: auto;
+          margin-top: 100px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+}
+
+.card {
+          width: 300px;
+          margin: 10px;
+          transition: all 300ms;
+}
+
+.card:hover {
+          width: 350px;
+}
+
+.card .cover {
+          width: 100%;
+          height: 250px;
+          position: relative;
+          overflow: hidden;
+}
+
+.card .cover img {
+          width: 250px;
+          display: block;
+          margin: auto;
+          position: relative;
+          top: 40px;
+          z-index: 1;
+          filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+          transition: all 400ms;
+}
+
+.card:hover .cover img {
+          top: 0px;
+          filter: none;
+}
+
+.card .img__back {
+          width: 100%;
+          height: 200px;
+          position: absolute;
+          bottom: -80px;
+          left: 0;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back {
+          background-image: url(https://i.ibb.co/HGnXjYq/bg1.jpg);
+}
+
+.card:nth-of-type(2) .img__back {
+          background-image: url(https://i.ibb.co/swsWmMQ/bg2.jpg);
+}
+
+.card:nth-of-type(3) .img__back {
+          background-image: url(https://i.ibb.co/wSKR72W/bg3.jpg);
+}
+
+.card:hover .img__back {
+          bottom: -40px;
+}
+
+.card .description {
+          background: white;
+          margin-top: -10px;
+          padding: 20px;
+          border-radius: 0px 0px 20px 20px;
+          transition: all 300ms;
+}
+
+.card:hover .description {
+          padding: 40px;
+}
+
+.card .description h2 {
+          margin-top: 10px;
+}
+
+.card .description p {
+          margin-top: 10px;
+}
+
+.card .description input {
+          padding: 10px 40px;
+          margin-top: 20px;
+          border: none;
+          background: #fc466b;
+          color: white;
+          font-size: 14px;
+          cursor: pointer;
+          border-radius: 8px;
+          transition: all 300ms;
+}
+
+.card .description input:hover {
+          background: #fd0638;
+}
